@@ -946,8 +946,8 @@
                                         Your awesome text goes here. Your awesome text goes here.
                                     </p>
 
-                                    <ul class="sortable-list taskList list-unstyled" id="upcoming">
-                                        <li id="task1">
+                                    <ul ondragstart="test(event)" class="sortable-list taskList list-unstyled" id="upcoming">
+                                        <li draggable="true" id="task1" >
                                             <span class="badge bg-soft-danger text-danger float-right">High</span>
                                             <h5 class="mt-0"><a href="javascript: void(0);" class="text-dark">iOS App home page</a></h5>
                                             <div class="checkbox checkbox-blue mb-2 checkbox-single float-right">
@@ -1408,10 +1408,14 @@
 
         <!-- Init -->
         <script src="assets/js/pages/kanban.init.js"></script>
+        
+        <script>
+          function test(event) {
+            alert('I am here :D');
+          }
+        </script>
 
         <!-- App js -->
         <script src="assets/js/app.min.js"></script>
-
-        
     </body>
 </html>
